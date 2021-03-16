@@ -11,7 +11,7 @@ import { RoundedButton } from '../../components/RoundedButton';
 
 import { Timing } from './Timing';
 
-const DEFAULT_TIME = 0.1;
+const DEFAULT_TIME = 1;
 
 export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
   {
@@ -93,7 +93,7 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
         )}
       </View>
       <View style={styles.clearSubject}>
-        <RoundedButton title="-" size={50} onPress={() => clearSubject()} />
+        <RoundedButton title="clear" size={50} onPress={() => clearSubject()} />
       </View>
     </View>
   );

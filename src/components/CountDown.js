@@ -17,7 +17,7 @@ export const Countdown = ({ minutes = 0.1, isPaused, onProgress, onEnd }) => {
     setMillis((time) => {
       if (time === 0) {
         clearInterval(interval.current);
-        
+
         return time;
       }
       const timeLeft = time - 1000;
@@ -34,7 +34,7 @@ export const Countdown = ({ minutes = 0.1, isPaused, onProgress, onEnd }) => {
     if (millis === 0) {
       onEnd();
     }
-  }, [millis])
+  }, [millis]);
 
   useEffect(() => {
     if (isPaused) {
